@@ -3,24 +3,22 @@
 #include <stdio.h>
 
 /**
- *main - Task 3 prints the alphabet in lowercase, and then in uppercase
- *followed by a new line
- *Return: 0
+ *main- printing lowercase alphabets
+ * Return: Always 0 (Success)
 */
 
 int main(void)
 
 {
-	int ch;
 
-	for (ch = 97; ch <= 122; ch++)
-{
-	putchar(ch);
-}
-	for (ch = 65; ch <= 90; ch++)
-{
-	putchar(ch);
-}
-	putchar(10); /* this is the ASCII code for new line*/
+	char alphabets;
+
+	char s = '\n';
+
+	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+		putchar(alphabets);
+
+	putchar(s);
+
 return (0);
 }
