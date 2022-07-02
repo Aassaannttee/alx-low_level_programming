@@ -12,18 +12,17 @@
  *Return: Always 0 (Success)
 */
 
-
 int main(void)
 
 {
+	char d = '0';
 
-	int number;
+	while (d <= '9')
 
-	for (number = NUMBER; number < LIMIT; number++)
-
-		printf("%d", number);
-}
-
-	printf("\n");
+{
+	putchar(d);
+	d++;
+}						        }
+	putchar('\n');
 return (0);
 }
