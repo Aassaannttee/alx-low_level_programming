@@ -21,12 +21,9 @@ int main(void)
 
 	for (number = NUMBER; number < LIMIT; number++)
 
-
 		printf("%d", number);
-
 }
 
 	printf("\n");
-
 return (0);
 }
