@@ -1,11 +1,8 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
 
 #define NUMBER 0
 #define LIMIT 10
-
 
 /**
  *main- single digit numbers to base1 10
@@ -15,14 +12,11 @@
 int main(void)
 
 {
-	char d = '0';
-
-	while (d <= '9')
-
+int n;
+	for (n = 0; n < 10; n++)
 {
-	putchar(d);
-	d++;
-}						        }
-	putchar('\n');
+		printf("%d", n);
+}
+printf('\n');
 return (0);
 }
