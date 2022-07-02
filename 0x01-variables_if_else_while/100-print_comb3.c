@@ -16,7 +16,7 @@ int i, j;
 {
 	if (i == j)
 {
-	continu;
+	continue;
 }
 	putchar(i);
 	putchar(j);
@@ -24,7 +24,7 @@ int i, j;
 {
 	break;
 }
-	else
+else
 {
 	putchar(',');
 	putchar(' ');
