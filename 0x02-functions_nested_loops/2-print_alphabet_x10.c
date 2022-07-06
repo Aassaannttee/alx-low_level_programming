@@ -1,11 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_alphabet_x10 - prints 10x the alphabets, in lowercase
  * Return: Always 0
 */
 
-int print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
 	int i, j = 0, n = 122;
 
@@ -13,9 +14,9 @@ int print_alphabet_x10(void)
 	{
 		for (i = 97; i <= n; i++)
 		{
-			putchar(i);
+			_putchar(i);
 		}
-		putchar(10);
+		_putchar(10);
 		j++;
 	}
 	return (0);
