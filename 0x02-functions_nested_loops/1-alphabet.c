@@ -2,15 +2,17 @@
 
 /**
  * main - print an alphabet in lower case
+ * Return: Always 0
 */
 
 void print_alphabet(void)
 {
-int j;
+	int j;
 
 	for (j = 'a';  j <= 'z'; j++)
 	{
-		_putchar(j);
+		putchar(j);
 	}
-	_putchar('\n');
+	putchar('\n');
+	return (0);
 }
