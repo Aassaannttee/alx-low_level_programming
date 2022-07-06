@@ -4,9 +4,9 @@
  * main - print an alphabet in lower case
 */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	int j;
+int j;
 
 	for (j = 'a';  j <= 'z'; j++)
 	{

@@ -5,9 +5,9 @@
  * Return: Always 0
  */
 
-int print_alphabet_x10(void);
+int print_alphabet_x10(void)
 {
-	int i, j = 0, n = 122;
+int i, j = 0, n = 122;
 
 	while (j < 10)
 	{
