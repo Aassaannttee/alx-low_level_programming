@@ -1,31 +1,31 @@
 #include "main.h"
 
-int squareroot(int n, int i);
+/**
+ * find_root - find square root of n, starting from the smallest possible, 0
+ * @n: number
+ * @root: the root
+ * Return: natural square root, the function should return -1
+ */
+int find_root(int n, int root)
+{
+	if (root * root > n)
+		return (-1);
+
+	if (root * root == n)
+		return (root);
+
+	return (find_root(n, root + 1));
+}
 
 /**
- * _sqrt_recursion - no loop, 1. 2nd function - checks for perfect square
- * @n: input
- * Return: Always 0 (Success)
+ * _sqrt_recursion - find natural square root of n
+ * @n: n
+ * Return: natural square root, or -1 if not natural root
  */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	else
-		return (squareroot(n, (n + 1) / 2));
-}
-/**
- * squareroot - checks if perfect square
- * @n: input
- * @i: counter
- * Return: if square root
- */
-int squareroot(int n, int i)
-{
-	if (i < 1)
-		return (-1);
-	else if (i * i == n)
-		return (i);
-	else
-		return (squareroot(n, i - 1));
+
+	return (find_root(n, 0));
 }
